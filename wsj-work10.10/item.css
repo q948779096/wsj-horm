@@ -1,0 +1,117 @@
+.items .item{
+	width:276px;
+	float: left;
+	margin-right:32px;
+}
+.items .item .star{
+	margin: 10px 0;
+}
+.items .item .star i{
+	font-style: normal;
+	color: rgb(255,215,0);
+}
+.items .item:nth-child(4){
+	margin-right:0 ;
+}
+.items .item > a{
+	display: block;
+	width: 276px;
+	border: 1px solid #BFBFBF;
+	box-sizing: border-box;
+	position: relative;
+}
+.items .item > a >img{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+}
+
+.items .item>p{
+	color: #666;
+	margin-top: 15px;
+}
+.items .item>h5{
+	color:red;
+	opacity: 1;
+	transition: 0.5s;
+}
+.items .item > a .eye{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	background-color: #73B320;
+	left: 50%;
+	margin-left: -20px;
+	margin-top: -20px;
+	opacity: 0;
+	transform: scale(1.2);
+	text-align: center;
+	line-height: 50px;
+}
+.items .item > a:hover  .eye{
+	opacity: 1;
+	transform: scale(1);
+	transition: 0.5s;
+	
+}
+.items .item > a .eye:hover{
+	background-color: #FF0000;
+}
+.items .item .choose {
+	opacity: 0;
+	transition: 0.5s;
+}
+.items .item .choose a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	background-color: #e5e8ec;
+	border-radius: 50%;
+}
+.items .item:hover .choose{
+	opacity: 1;
+	transform: translateY(-20px);
+}
+.items .item:hover h5{
+	opacity: 0;
+	transform: translateY(10px);
+}
+.items .item .choose>a>i{
+	width: 40px;
+	height: 40px;
+	display: block;
+	background-repeat:no-repeat;
+	background-position: 10px 10px;
+	background-size: 20px;
+	border-radius:50% ;
+}
+.items .item .choose>a>i:hover{
+	background-color: #fd7e14;
+	border-radius:50% ;
+	transition: 0.8s;
+}
+.items .item .choose>a:nth-child(1)>i{
+		background-image: url(img/index/lshop.png);
+}
+.items .item .choose>a:nth-child(1)>i:hover{
+		background-image: url(img/index/bshop.png);
+}
+.items .item .choose>a:nth-child(2)>i{
+		background-image: url(img/index/lxin.png);
+}
+.items .item .choose>a:nth-child(2)>i:hover{
+		background-image: url(img/index/bxin.png);
+}
+.items .item .choose>a:nth-child(3)>i{
+		background-image: url(img/index/lzhuanhuan.png);
+}
+.items .item .choose>a:nth-child(3)>i:hover{
+		background-image: url(img/index/bzhuanhuan.png)  ;
+}
+.items .item > a:hover{
+	border: 1px solid red;
+}
